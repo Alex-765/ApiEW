@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var stateController = StateController()
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Button("Get quote", action: { stateController.getQuote() })
+            Text(stateController.quote3)
         }
         .padding()
     }
