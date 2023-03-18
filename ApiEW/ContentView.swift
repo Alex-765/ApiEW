@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var name: String = ""
+    @State private var input: String = ""
     @StateObject private var stateController = StateController()
     
     var body: some View {
         List {
-            TextField("Enter your name", text: $name)
-            Button("Get age", action: { stateController.getAge(name: name) })
+            TextField("Enter your name", text: $input)
+            Button("Get age", action: { stateController.getAge(name: input) })
             Text(stateController.age)
         }
         .padding()

@@ -7,8 +7,6 @@
 
 import Foundation
 
-import Foundation
-
 class AgeResponse: Codable{
     var age: Int
 }

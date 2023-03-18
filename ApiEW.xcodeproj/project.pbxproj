@@ -15,7 +15,7 @@
 		DA038DB529C4CEFF00FFB503 /* ApiEWUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA038DB429C4CEFF00FFB503 /* ApiEWUITests.swift */; };
 		DA038DB729C4CEFF00FFB503 /* ApiEWUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA038DB629C4CEFF00FFB503 /* ApiEWUITestsLaunchTests.swift */; };
 		DA038DC629C4D1C100FFB503 /* StateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA038DC529C4D1C100FFB503 /* StateController.swift */; };
-		DA038DCA29C4F30000FFB503 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA038DC929C4F30000FFB503 /* Quote.swift */; };
+		DA038DCA29C4F30000FFB503 /* AgeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA038DC929C4F30000FFB503 /* AgeResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +47,7 @@
 		DA038DB429C4CEFF00FFB503 /* ApiEWUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEWUITests.swift; sourceTree = "<group>"; };
 		DA038DB629C4CEFF00FFB503 /* ApiEWUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEWUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		DA038DC529C4D1C100FFB503 /* StateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateController.swift; sourceTree = "<group>"; };
-		DA038DC929C4F30000FFB503 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		DA038DC929C4F30000FFB503 /* AgeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,7 +136,7 @@
 		DA038DC329C4D0B100FFB503 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				DA038DC929C4F30000FFB503 /* Quote.swift */,
+				DA038DC929C4F30000FFB503 /* AgeResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -271,7 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA038DCA29C4F30000FFB503 /* Quote.swift in Sources */,
+				DA038DCA29C4F30000FFB503 /* AgeResponse.swift in Sources */,
 				DA038D9C29C4CEFD00FFB503 /* ContentView.swift in Sources */,
 				DA038DC629C4D1C100FFB503 /* StateController.swift in Sources */,
 				DA038D9A29C4CEFD00FFB503 /* ApiEWApp.swift in Sources */,
