@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var name: String = ""
     @StateObject private var stateController = StateController()
     
     var body: some View {
-        VStack {
-            Button("Get quote", action: { stateController.getQuote() })
-            Text(stateController.quote3)
+        List {
+            TextField("Enter your name", text: $name)
+            Button("Get age", action: { stateController.getAge(name: name) })
+            Text(stateController.age)
         }
         .padding()
     }

@@ -8,12 +8,13 @@
 import Foundation
 
 class StateController: ObservableObject {
-    @Published var quote3: String = ""
+    @Published var age: String = ""
     
-    func getQuote() {
-        let baseUrl = "https://api.kanye.rest"
+    func getAge(name: String) {
+        let baseUrl = "https://api.agify.io"
+        let query = "?name=\(name)"
         
-        guard let url = URL(string: baseUrl) else {
+        guard let url = URL(string: baseUrl + query) else {
             print("Invalid URL")
             return
         }
@@ -22,21 +23,21 @@ class StateController: ObservableObject {
         
         URLSession.shared.dataTask(with: request) { (data, response, error) in
             if let data = data {
-                if let quote = self.parseJson(json: data)?.quote {
+                if let age = self.parseJson(json: data)?.age {
                     DispatchQueue.main.async {
-                        self.quote3 = quote
+                        self.age = "The age of \(name) is \(age)"
                     }
                 }
             }
         }.resume()
     }
     
-    func parseJson(json: Data) -> Quote?{
+    func parseJson(json: Data) -> AgeResponse?{
         let decoder = JSONDecoder()
         
         do {
-            let quote = try decoder.decode(Quote.self, from: json)
-            return quote
+            let response = try decoder.decode(AgeResponse.self, from: json)
+            return response
         } catch {
             print("Error decoding JSON: \(error)")
             return nil

@@ -7,6 +7,8 @@
 
 import Foundation
 
-class Quote: Codable{
-    var quote: String
+import Foundation
+
+class AgeResponse: Codable{
+    var age: Int
 }
